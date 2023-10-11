@@ -48,7 +48,9 @@ Run this commands:
 
 `sudo apt-get update`
 
-`$ sudo apt-get install git`
+`sudo apt-get install git`
+
+Type "yes" or "y" if needed.
 
 # Clone repository
 
@@ -68,13 +70,13 @@ Got to the repository directory:
 
 Build the docker image:
 
-`docker build -t fetch-machine-learning .`
+`sudo docker build -t fetch-machine-learning .`
 
 # Run the container
 
 To run the container, run this command:
 
-`docker run --rm -v $(pwd):/home/ubuntu fetch-machine-learning`
+`sudo docker run --rm -v $(pwd):/home/ubuntu fetch-machine-learning`
 
 Once the container finishes its execution, run 
 
@@ -88,3 +90,12 @@ and you should be able to see three files: `loss_convergence.png`, `forecast.csv
 
 `forecast.png` shows the plot of the historic and predicted monthly scanned receipts.
 
+# Check the results
+
+To see the values of the predicted values for 2022, run this command:
+
+`cat forecast.csv`
+
+If you have GUI or if you have a share folder with your Linux system, have a look at the `loss_convergence.png` and `forecast.png` to check the convergence of the algorithm and how the predicted values look compared to the historic values.
+
+And that's it!
