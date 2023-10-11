@@ -44,7 +44,7 @@ Our algorithm will use a value of $\eta$ equal to 0.1 and a number of epochs $n$
 
 # Run the solution
 
-I'm assuming that the user can use a Linux terminal (preferably Ubuntu) and can use docker.
+I'm assuming that the user can use a Linux terminal (preferably Ubuntu) and has a relatively new version of docker installed.
 
 # Install Git (if you don't have it)
 
@@ -56,7 +56,7 @@ Run this commands:
 
 Type "yes" or "y" if needed.
 
-# Clone repository
+# Clone the repository
 
 Preferably, but not necessesarily, go to the `home` directory:
 
