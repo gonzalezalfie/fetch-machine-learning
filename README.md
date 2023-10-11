@@ -26,7 +26,7 @@ $$L(\beta) = \frac{1}{2N}\sum_{t=1}^N e_t^2 = \frac{1}{2N}\sum_{t = 1}^N (Y_t - 
 
 We will use gradient descent to get the values of $\beta_0$, $\beta_1$ and $\beta_2$ that minimize the function.
 
-According to the algorithm, we update $\beta$ a number of epochs $n$ with a learning rate $\eta$ as follows:
+According to the algorithm, we update each $\beta_j$ a number of epochs $n$ with a learning rate $\eta$ as follows:
 
 $$\beta_j^{(i+1)} = \beta_j^{(i)}-\eta\frac{\partial L(\beta^{(i)})}{\partial\beta_j^{(i)}}$$
 
