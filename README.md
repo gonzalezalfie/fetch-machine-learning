@@ -38,6 +38,10 @@ $$\frac{\partial L(\beta)}{\partial\beta_1} = -\frac{1}{N}\sum_{t = 1}^N te_t$$
 
 $$\frac{\partial L(\beta)}{\partial\beta_2} = -\frac{1}{N}\sum_{t = 1}^N X_te_t$$
 
+We will run the algorithm using a docker image that will execute the `model.py` file included in this repostitory. If you want to see in detail, how the gradient descent estimates the values of \beta_j and how it predicts the future values, you can read the comments in the file
+
+Our algorithm will use a value of \eta equal to 0.1 and a number of epochs $n$ equal to 1000.
+
 # Run the solution
 
 I'm assuming that the user can use a Linux terminal (preferably Ubuntu) and can use docker.
@@ -88,7 +92,7 @@ and you should be able to see three files: `loss_convergence.png`, `forecast.csv
 
 `forecast.csv` has the historic monthly values of 2021 as wells as the predicted values for 2022.
 
-`forecast.png` shows the plot of the historic and predicted monthly scanned receipts.
+`forecast.png` shows the plot of the historic and predicted values.
 
 # Check the results
 
